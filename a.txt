@@ -1,0 +1,108 @@
+background-image= Establece una imagen de fondo en cada elemento
+
+background-image: url('')= Se coloca la ruta de la imagen de fondo
+
+background-size=  Se asegura que la imagen de fondo cubra todo el contenedor
+
+background-repeat: no-repeat= Evita que una imagen se repita
+
+text-align: center= Centra el texto
+
+padding= Agrega algo de padding para que el contenido no esté pegado a los bordes
+
+background-position: center= Centra la imagen
+
+height: 100vh= Hace que el fondo cubra el 100% de la pantalla
+
+border-radius= Añade bordes redondeados
+
+color= Cambia el color del texto para un contraste con el fondo
+
+box-shadow= Agrega un poco de sombra para dar profundidad
+
+margin: 0= Quita los márgenes
+
+
+function Header() {
+  return (
+    <header className="header">
+      <div className="logo-container">
+        <img src={logo} alt="Logo de UrbanFashionTrends" className="logo-image" />
+        <h1 className="logo-title">UrbanFashionTrends</h1>
+      </div>
+      <nav className="navbar">
+        <ul className="menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/about">Acerca de</a></li>
+          <li><a href="/products">Productos</a></li>
+          <li><a href="/contact">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+
+/* Estilo del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: #450094;
+  color: white;
+}
+.logo-container {
+  display: flex;
+  align-items: center; 
+}
+  
+  /* Estilo del logo */
+.logo-image {
+  height: 75px;
+  width: auto;
+  margin-right: 20px;
+}
+  
+  /* Estilo del título */
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Menú responsivo */
+@media (max-width: 851px) {
+  .navbar .menu {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar.active .menu {
+    display: flex;
+  }
+
+  .navbar a {
+    text-align: center;
+    padding: 10px;
+  }
+}

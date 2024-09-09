@@ -1,0 +1,89 @@
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: #450094;
+  color: white;
+}
+.logo-container {
+  display: flex;
+  align-items: center; 
+}
+  
+/* logo */
+.logo-image {
+  height: 75px;
+  width: auto;
+  margin-right: 20px;
+}
+
+/* título */
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* menú */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: white;
+  padding: 8px 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Estilos del menú hamburguesa que se ocultan por defecto */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4b0082;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    text-align: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
