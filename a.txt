@@ -21,88 +21,88 @@ color= Cambia el color del texto para un contraste con el fondo
 box-shadow= Agrega un poco de sombra para dar profundidad
 
 margin: 0= Quita los márgenes
-
-
-function Header() {
-  return (
-    <header className="header">
-      <div className="logo-container">
-        <img src={logo} alt="Logo de UrbanFashionTrends" className="logo-image" />
-        <h1 className="logo-title">UrbanFashionTrends</h1>
-      </div>
-      <nav className="navbar">
-        <ul className="menu">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/about">Acerca de</a></li>
-          <li><a href="/products">Productos</a></li>
-          <li><a href="/contact">Contactos</a></li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
-
-
-/* Estilo del header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7px 15px;
-  background-color: #450094;
-  color: white;
-}
-.logo-container {
-  display: flex;
-  align-items: center; 
-}
-  
-  /* Estilo del logo */
-.logo-image {
-  height: 75px;
-  width: auto;
-  margin-right: 20px;
-}
-  
-  /* Estilo del título */
-.logo-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.navbar .menu {
-  list-style: none;
-  display: center;
-  gap: 20px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 25px;
-  border-radius: 4px;
-}
-
-.navbar a:hover {
-  background-color: #555;
-}
-
-/* Menú responsivo */
-@media (max-width: 851px) {
-  .navbar .menu {
-    flex-direction: column;
-    display: none;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .navbar.active .menu {
-    display: flex;
-  }
-
-  .navbar a {
-    text-align: center;
-    padding: 10px;
-  }
-}
+{ 
+            id: 7, 
+            name: '', 
+            description: '', 
+            image: '', 
+            price: 25.99
+        },
+        { 
+            id: 8, 
+            name: '', 
+            description: '', 
+            image: '', 
+            price: 25.99
+        },
+        { 
+            id: 9, 
+            name: '', 
+            description: '', 
+            image: '', 
+            price: 25.99
+        },
+	{
+		id: 1,
+		img: 'https://static.ftshp.digital/img/p/1/2/5/7/4/9/125749.jpg',
+		nameProduct: 'Nike Air Max Plus',
+		price: 80000,
+		quantity: 1,
+	},
+	{
+		id: 2,
+		img: 'https://m.media-amazon.com/images/I/619mikRldfL._SX679_.jpg',
+		nameProduct: 'Nike Mens Jacket Chelsea FC',
+		price: 50000,
+		quantity: 1,
+	},
+	{
+		id: 3,
+		img: 'https://i.ebayimg.com/images/g/UEEAAOSwYgtkwDWm/s-l960.jpg',
+		nameProduct: 'Nike Air Jordan 1 Low Game',
+		price: 90000,
+		quantity: 1,
+	},
+	{
+		id: 4,
+		img: 'https://www.brokenchains.com.co/cdn/shop/files/FD4290-003-nike-air-max-plus-drift-par-diagonal-07.jpg?v=1714599063&width=1400',
+		nameProduct: 'Nike Air Max Plus Drift',
+		price: 50000,
+		quantity: 1,
+	},
+	{
+		id: 5,
+		img: 'https://sparta.cl/media/catalog/product/p/o/polera-running-hombre-nike-dri-fit-miler-negra-frontal.png?quality=80&bg-color=255,255,255&fit=bounds&height=550&width=600&canvas=600:550',
+		nameProduct: 'Polera Running Hombre Nike Dri-FIT Miler Negra',
+		price: 20000,
+		quantity: 1,
+	},
+	{
+		id: 6,
+		img: 'https://media.gq.com.mx/photos/64a6eab168d3bea3f38a4b6f/16:9/w_1600,c_limit/Nike_Air_Max_180_Ultramarine.jpg',
+		nameProduct: 'Nike Air Max 180 “Ultramarine”',
+		price: 90000,
+		quantity: 1,
+	},
+	{
+		id: 7,
+		img: 'https://i.ebayimg.com/images/g/gC8AAOSwPzBkjKJn/s-l1600.webp',
+		nameProduct: 'Zapatillas Nike Air Max 1 "86 Premium OG"',
+		price: 60000,
+		quantity: 1,
+	},
+	{
+		id: 8,
+		img: 'https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw4336df0c/products/NI_CJ4824-010/NI_CJ4824-010-1.JPG',
+		nameProduct: 'Buzo Nike Sportswear Air',
+		price: 120000,
+		quantity: 1,
+	},
+	{
+		id: 9,
+		img: 'https://i.ebayimg.com/images/g/Y8AAAOSwpmNmPUsh/s-l960.webp',
+		nameProduct: 'Denim Nike Dunk High Premium SB Midnight Navy',
+		price: 40000,
+		quantity: 1,
+	},
+];
